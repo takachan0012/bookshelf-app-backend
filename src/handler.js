@@ -25,11 +25,20 @@ const addBook = (request, h) => {
   const insertedAt = new Date().toISOString();
   const updatedAt = insertedAt;
   const finished = pageCount === readPage;
-  /* eslint-disable max-len */
   const newBook = {
-    name, year, author, summary, publisher, pageCount, readPage, reading, id, insertedAt, updatedAt, finished,
+    name,
+    year,
+    author,
+    summary,
+    publisher,
+    pageCount,
+    readPage,
+    reading,
+    id,
+    insertedAt,
+    updatedAt,
+    finished,
   };
-    /* eslint-disable max-len */
   books.push(newBook);
   const response = h.response({
     status: 'success',
